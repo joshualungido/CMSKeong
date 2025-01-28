@@ -9,52 +9,55 @@ const product: SchemaTypeDefinition = {
       name: "name",
       title: "Product Name",
       type: "string",
-      validation: (Rule) => Rule.required().min(1).max(100), // Wajib diisi
+      validation: (Rule) => Rule.required().min(1).max(100),
     },
     {
       name: "description",
       title: "Description",
       type: "text",
-      validation: (Rule) => Rule.required().min(10), // Wajib diisi, minimal 10 karakter
+      validation: (Rule) => Rule.required().min(10),
     },
     {
       name: "image",
       title: "Product Image",
       type: "image",
       options: {
-        hotspot: true, // Memungkinkan pemotongan gambar
+        hotspot: true,
       },
-      validation: (Rule) => Rule.required(), // Wajib diisi
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "type",
       title: "Product Type",
       type: "string",
-      validation: (Rule) => Rule.required(), // Wajib diisi
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "size",
       title: "Size",
       type: "string",
-      validation: (Rule) => Rule.required(), // Wajib diisi
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "weight",
       title: "Weight",
       type: "string",
-      validation: (Rule) => Rule.required(), // Wajib diisi
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "packaging",
       title: "Packaging",
       type: "string",
-      validation: (Rule) => Rule.required(), // Wajib diisi
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "certification",
       title: "Certification",
-      type: "string",
-      validation: (Rule) => Rule.optional(), // Opsional
+      type: "file",
+      options: {
+        accept: ".pdf",
+      },
+      validation: (Rule) => Rule.optional(),
     },
   ],
 };
