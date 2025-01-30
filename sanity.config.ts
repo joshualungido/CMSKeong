@@ -4,6 +4,7 @@ import { visionTool } from "@sanity/vision";
 import product from "./schemaTypes/product";  // Import schema produk
 import testimonial from "./schemaTypes/testimonials";
 import aboutUs from "./schemaTypes/aboutUs";
+import keunggulan from "./schemaTypes/keunggulan";
 
 export default defineConfig({
   name: "default",
@@ -12,6 +13,6 @@ export default defineConfig({
   dataset: "production",
   plugins: [deskTool(), visionTool()],
   schema: {
-    types: [product, testimonial, aboutUs],  // Menambahkan produk ke dalam schema
+    types: [product, testimonial, aboutUs, keunggulan],  // Menambahkan produk ke dalam schema
   },
 });
