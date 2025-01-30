@@ -28,12 +28,7 @@ const aboutUs = {
           },
         ],
       },
-      {
-        name: 'advantages',
-        title: 'Keunggulan',
-        type: 'array',
-        of: [{ type: 'block' }],
-      },
+      
       {
         name: 'images',
         title: 'Gambar',
