@@ -25,7 +25,7 @@ const article: SchemaTypeDefinition = {
       options: {
         hotspot: true, // Memungkinkan cropping image
       },
-      validation: (Rule) => Rule.required(),
+      validation: (Rule) => Rule.optional(),
     },
     {
       name: "publishedAt",
