@@ -33,15 +33,7 @@ const article: SchemaTypeDefinition = {
       type: "datetime",
       validation: (Rule) => Rule.required(),
     },
-    {
-      name: "video", // Menambahkan field video
-      title: "Video",
-      type: "file",
-      options: {
-        accept: "video/*", // Membatasi hanya format video yang dapat diunggah
-      },
-      validation: (Rule) => Rule.optional(), // Bisa diisi atau kosong
-    },
+    
   ],
 };
 
